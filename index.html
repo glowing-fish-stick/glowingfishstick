@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>HTML with advanced css</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #C8DDFF;
+        }
+
+      
+        nav {
+            background-color: #6081B7;
+            overflow: hidden;
+        }
+
+        nav a {
+            float:left;
+            display: block;
+            color:black;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+     
+        .form-container {
+            max-width: 500px;
+            margin: 30px auto;
+            background: #7489AB;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input:focus, form textarea:focus {
+            border-color: #333;
+        }
+
+        
+        form .submit-btn {
+            background-color: #42649A;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        form .submit-btn:hover {
+            background-color: transparent;
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+
+        form .submit-btn a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        form .submit-btn:hover a {
+            text-decoration: underline;
+        }
+
+       
+        .info-box {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #eef;
+            border: 1px solid #99c;
+            border-radius: 5px;
+        }
+
+        .info-box span {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://youtu.be/AxE4TltnvjI?si=1yxglLMi_N6feCUB">Home</a>
+        <a href="https://youtu.be/ePwX-z0LM4o?si=YEaflHgrScxSDYWx">About</a>
+        <a href="#form">Register</a>
+        <a href="https://youtu.be/5hXoGthxotk?si=Z6FpYyDxGsU5rjXq">Contact</a>
+    </nav>
+
+
+    <div id="form" class="form-container">
+        <h2>Registration Form</h2>
+        <form action="submit.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" name="bio" rows="4"></textarea>
+
+            <button type="submit" class="submit-btn">
+                <a href="https://youtu.be/1OF3icemRJc?si=iOp0GxQrcSniEL5C">Submit</a>
+            </button>
+        
+</body>
+</html
